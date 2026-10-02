@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chetan Sharma | Machine Learning &amp; Generative AI</title>
+<meta name="description" content="Portfolio of Chetan Sharma, B.Tech CS (AI/ML) graduate building Generative AI, agentic, computer vision and MLOps projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<header id="top"><nav class="wrap" aria-label="Main">
+<a class="logo" href="#hero">Chetan Sharma</a>
+<button class="theme" id="theme" aria-label="Toggle color theme">☾</button>
+<button class="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<ul id="links">
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></header>
+
+<main>
+<section id="hero" class="wrap hero">
+<canvas id="spark"></canvas>
+<div class="blob b1"></div><div class="blob b2"></div>
+<div class="hero-text">
+<span class="pill">👋 Hi, I'm</span>
+<h1>Chetan Sharma</h1>
+<p class="typing"><span id="typed"></span><i class="caret"></i></p>
+<p class="lead">I build intelligent AI systems that solve real-world problems — across Machine Learning, Generative AI, NLP, RAG, multi-agent systems and MLOps.</p>
+<div class="cta"><a class="btn primary" href="#projects">View My Work</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="socials" aria-label="Social links">
+<a href="https://github.com/chetansharma06" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+<a href="https://linkedin.com/in/c6s6b6t6" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+<a href="mailto:chetanbhardwaj5252@gmail.com" aria-label="Email">Email</a>
+</div>
+</div>
+<div class="me-wrap">
+<img class="me" src="assets/profile.jpg" alt="Portrait of Chetan Sharma in a beige blazer and black tie" width="1040" height="1050">
+<span class="ring"></span>
+<span class="tag tag1">ML · GenAI</span><span class="tag tag2">RAG · Agents</span><span class="tag tag3">MLOps</span>
+</div>
+<a href="#about" class="scroll" aria-label="Scroll to about"><span></span></a>
+</section>
+
+<section id="about" class="wrap rv"><h2>About</h2>
+<p class="about-lead">I build <strong>intelligent AI systems that solve real-world problems</strong> by combining machine learning, modern AI techniques, and practical software engineering.</p>
+<p>As a <strong>Machine Learning Intern at TheSmartBridge</strong>, I work across <strong>Machine Learning, Generative AI, NLP, Retrieval-Augmented Generation (RAG), Multi-Agent Systems, and MLOps</strong>, developing end-to-end AI applications from concept and experimentation to deployment.</p>
+<p>My work focuses on turning complex ideas into <strong>practical, scalable, and reliable AI solutions</strong> — including research automation, intelligent information retrieval, video intelligence, and malicious URL detection. I enjoy exploring emerging AI technologies, building intelligent workflows, and continuously improving models and systems to create meaningful real-world impact.</p>
+<ul class="stats"><li><b data-n="3">0</b>internships</li><li><b id="pcount" data-n="7">0</b>projects</li><li><b data-n="1">0</b>research publication</li></ul>
+</section>
+
+<section id="skills" class="alt"><div class="wrap rv"><h2>Skills</h2>
+<p class="muted">Click a skill to see the projects that use it.</p>
+<div class="grid2" id="skillgrid"></div></div></section>
+
+<section id="experience" class="wrap rv"><h2>Experience</h2>
+<div class="tl">
+<details open><summary><b>Machine Learning Intern, TheSmartBridge</b><span>Noida · Jul 2026 – Present</span></summary><ul>
+<li>Developing ML and AI solutions using Python, Generative AI, LLMs, NLP and modern AI frameworks.</li>
+<li>Working on data preprocessing, model development, prompt engineering and end-to-end AI application workflows.</li>
+<li>Building AI-powered APIs and application components using FastAPI and Python.</li></ul></details>
+<details><summary><b>Machine Learning Intern, Prodigy InfoTech</b><span>Remote · Aug 2025 – Oct 2025</span></summary><ul>
+<li>Developed ML models using Python and Scikit-learn; did data preprocessing, feature engineering and model evaluation.</li>
+<li>Completed real-world classification and regression projects following structured ML workflows.</li></ul></details>
+<details><summary><b>Data Analyst Intern, UpGrad</b><span>Remote · Jun 2024 – Aug 2024</span></summary><ul>
+<li>Cleaned and analyzed datasets using Python, SQL and Excel; performed EDA and data visualization.</li>
+<li>Built interactive Power BI dashboards to communicate business insights.</li></ul></details>
+</div></section>
+
+<section id="projects" class="alt"><div class="wrap rv"><h2>Projects</h2>
+<div class="tools">
+<div class="tabs" id="tabs" role="tablist" aria-label="Project categories"></div>
+<input id="q" type="search" placeholder="Search by title or technology" aria-label="Search projects">
+</div>
+<div class="grid2" id="cards" aria-live="polite"></div>
+<p id="empty" class="muted" hidden>No projects match. Try another filter.</p>
+</div></section>
+
+<section id="education" class="wrap rv"><h2>Education, research and certifications</h2>
+<div class="grid2">
+<div class="card"><h3>Sushant University</h3><p>Bachelor of Science in Computer Science (AI/ML)</p><p class="muted">Sep 2022 – May 2026 · Gurugram, Haryana</p>
+<h3>Research publication</h3><p class="muted">"Safe-Surf: Advanced Phishing Intelligence &amp; AI Agent", International Journal of Engineering Research &amp; Technology (IJERT), May 2025. Proposes an AI-driven phishing URL detection framework.</p></div>
+<div class="card"><h3>Certifications</h3><ul class="plain"><li>Deep Learning Certification, Samatrix.io Consulting Pvt. Ltd.</li><li>Google Skills Boost: Beginner Generative AI, Responsible AI, Operational AI Principles</li></ul></div>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap rv"><h2>Contact</h2>
+<div class="grid2">
+<ul class="contact">
+<li><span>Email</span><a href="mailto:chetanbhardwaj5252@gmail.com">chetanbhardwaj5252@gmail.com</a> <button class="mini" id="copy" type="button">Copy email</button></li>
+<li><span>Phone</span><a href="tel:+918607775387">+91-8607775387</a></li>
+<li><span>LinkedIn</span><a href="https://linkedin.com/in/c6s6b6t6" target="_blank" rel="noopener noreferrer">linkedin.com/in/c6s6b6t6</a></li>
+<li><span>GitHub</span><a href="https://github.com/chetansharma06" target="_blank" rel="noopener noreferrer">github.com/chetansharma06</a></li>
+<li><span>Location</span>Nuh, Haryana, India</li></ul>
+<form id="form"><label>Your name<input name="n" required autocomplete="name"></label>
+<label>Your email<input name="e" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="m" required></textarea></label>
+<button class="btn primary" type="submit">Open in my email app</button></form>
+</div></div></section>
+</main>
+
+<footer><div class="wrap foot"><span>© <span id="yr">2026</span> Chetan Sharma</span>
+<span class="flinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="https://github.com/chetansharma06" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://linkedin.com/in/c6s6b6t6" target="_blank" rel="noopener noreferrer">LinkedIn</a></span></div></footer>
+
+<dialog id="modal" aria-labelledby="mt"><button class="x" id="mx" aria-label="Close">×</button><div id="mbody"></div></dialog>
+<button id="up" aria-label="Back to top" hidden>↑</button>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
