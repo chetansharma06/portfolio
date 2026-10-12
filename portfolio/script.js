@@ -17,6 +17,10 @@ const PROJECTS = [
   desc:"A multilingual video/audio intelligence system for transcription, content analysis and context-aware Q&A.",
   bullets:["Whisper and Sarvam AI for transcription.","RAG pipeline with LangChain, embeddings and ChromaDB; Mistral AI generates summaries, decisions and action items."],
   tech:["Python","Whisper","Sarvam AI","Mistral AI","LangChain","RAG","Hugging Face","Sentence Transformers","ChromaDB","Streamlit"],gh:"https://github.com/chetansharma06/Ai-video-assistant"},
+ {title:"ContentCraft - AI Content Studio",cat:CATS[1],date:"2026",
+  desc:"An AI-powered content creation studio that generates polished blog posts, social media copy, newsletters and marketing content with your brand voice, SEO optimization and multi-platform formatting.",
+  bullets:["Brand-voice cloning from your past writing using fine-tuned prompts and few-shot examples.","SEO-optimized outlines, auto-generated images and platform-specific formatting for LinkedIn, Twitter and blogs.","One-click publishing drafts with revision history and collaborative editing."],
+  tech:["Python","LangChain","Groq","OpenAI","Streamlit","Pinecone","Tavily","Pandas","FastAPI","Docker"],gh:"https://github.com/chetansharma06/ContentCraft"},
  {title:"AI Bug & Debugging Advisor",cat:CATS[1],date:"Sep 2026",
   desc:"A Python debugging assistant that detects bugs, explains them, and gives a five-level hint ladder that guides the developer to the fix without revealing it too early.",
   bullets:["AST-based static analysis, offline LLM stub and leak-detection guardrails.","Available as a CLI and a Streamlit web app."],
@@ -141,7 +145,7 @@ startCanvas();
 addEventListener("resize", () => { resize(); initPts(); });
 
 // ---------- hero typing ----------
-const words = ["Machine Learning Intern", "Generative AI Developer", "Agentic AI Builder"];
+const words = ["Machine Learning Intern", "Generative AI Developer", "Agentic AI Builder", "Content Creator"];
 let w = 0, ch = 0, del = false;
 function type() {
  const t = words[w]; $("#typed").textContent = t.slice(0, ch);
@@ -167,6 +171,12 @@ const io = new IntersectionObserver(es => es.forEach(e => {
  e.target.classList.add("in"); e.target.querySelectorAll("[data-n]").forEach(count); io.unobserve(e.target);
 }), {threshold: .15});
 document.querySelectorAll(".rv").forEach(el => io.observe(el));
+
+// section header underline reveal
+const headerIo = new IntersectionObserver(es => es.forEach(e => {
+ if (e.isIntersecting) e.target.classList.add("shown");
+}), {threshold: .2, rootMargin: "0px 0px -50px 0px"});
+document.querySelectorAll("section h2").forEach(h => headerIo.observe(h));
 
 const links = [...document.querySelectorAll("#links a")];
 const spy = new IntersectionObserver(es => es.forEach(e => {
