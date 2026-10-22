@@ -4,35 +4,51 @@ const PROJECTS = [
  {title:"Clinical Documentation & Follow-up Agent",cat:CATS[0],date:"Sep 2026",
   desc:"Converts doctor-patient consultation audio into transcripts, extracts structured clinical notes, reviews them, generates follow-up suggestions, and updates a mock EHR only after clinician approval.",
   bullets:["Human-in-the-loop approval, checkpointing and audit logging.","Runs locally with Qwen ASR and Ollama (Qwen2.5-3B)."],
-  tech:["Python","Streamlit","LangGraph","LangChain","Ollama","FastAPI","SQLite","Pydantic"],gh:"https://github.com/chetansharma06/Clinical-Agent-"},
+  tech:["Python","Streamlit","LangGraph","LangChain","Ollama","FastAPI","SQLite","Pydantic"],
+  image:"https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+  gh:"https://github.com/chetansharma06/Clinical-Agent-"},
  {title:"TripMate AI",cat:CATS[0],date:"Sep 2026",
   desc:"A multi-agent travel planner built with LangGraph that turns natural-language requests into complete, budget-aware itineraries.",
   bullets:["Separate agents for flights (AviationStack), hotels (Tavily) and itinerary generation (Llama 3.3 70B on Groq).","FastAPI backend with PostgreSQL state persistence, deployed with Docker on Render."],
-  tech:["Python","FastAPI","LangGraph","LangChain","Groq","PostgreSQL","Jinja2","Docker","Render"],gh:"https://github.com/chetansharma06/TripMateAI"},
+  tech:["Python","FastAPI","LangGraph","LangChain","Groq","PostgreSQL","Jinja2","Docker","Render"],
+  image:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+  gh:"https://github.com/chetansharma06/TripMateAI"},
  {title:"ResearchMind - Multi-Agent AI Research System",cat:CATS[0],date:"2026",
   desc:"An autonomous research assistant using four agents: Search, Reader, Writer and Critic, for web research and report generation.",
   bullets:["Tavily and BeautifulSoup for web search and source extraction.","LangChain/LCEL pipelines for LLM reasoning, report writing and automated research critique."],
-  tech:["Python","LangChain","LCEL","LLMs","Tavily","BeautifulSoup","AgentExecutor"],gh:"https://github.com/chetansharma06/Research_Mind"},
+  tech:["Python","LangChain","LCEL","LLMs","Tavily","BeautifulSoup","AgentExecutor"],
+  image:"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+  gh:"https://github.com/chetansharma06/Research_Mind"},
  {title:"AI Video Assistant - RAG-Based Video Intelligence",cat:CATS[1],date:"2026",
   desc:"A multilingual video/audio intelligence system for transcription, content analysis and context-aware Q&A.",
   bullets:["Whisper and Sarvam AI for transcription.","RAG pipeline with LangChain, embeddings and ChromaDB; Mistral AI generates summaries, decisions and action items."],
-  tech:["Python","Whisper","Sarvam AI","Mistral AI","LangChain","RAG","Hugging Face","Sentence Transformers","ChromaDB","Streamlit"],gh:"https://github.com/chetansharma06/Ai-video-assistant"},
+  tech:["Python","Whisper","Sarvam AI","Mistral AI","LangChain","RAG","Hugging Face","Sentence Transformers","ChromaDB","Streamlit"],
+  image:"https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+  gh:"https://github.com/chetansharma06/Ai-video-assistant"},
  {title:"ContentCraft - AI Content Studio",cat:CATS[1],date:"2026",
   desc:"An AI-powered content creation studio that generates polished blog posts, social media copy, newsletters and marketing content with your brand voice, SEO optimization and multi-platform formatting.",
   bullets:["Brand-voice cloning from your past writing using fine-tuned prompts and few-shot examples.","SEO-optimized outlines, auto-generated images and platform-specific formatting for LinkedIn, Twitter and blogs.","One-click publishing drafts with revision history and collaborative editing."],
-  tech:["Python","LangChain","Groq","OpenAI","Streamlit","Pinecone","Tavily","Pandas","FastAPI","Docker"],gh:"https://github.com/chetansharma06/ContentCraft"},
+  tech:["Python","LangChain","Groq","OpenAI","Streamlit","Pinecone","Tavily","Pandas","FastAPI","Docker"],
+  image:"https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&w=1200&q=80",
+  gh:"https://github.com/chetansharma06/ContentCraft"},
  {title:"AI Bug & Debugging Advisor",cat:CATS[1],date:"Sep 2026",
   desc:"A Python debugging assistant that detects bugs, explains them, and gives a five-level hint ladder that guides the developer to the fix without revealing it too early.",
   bullets:["AST-based static analysis, offline LLM stub and leak-detection guardrails.","Available as a CLI and a Streamlit web app."],
-  tech:["Python","ast","Ruff","Pyflakes","Radon","Streamlit","Typer","pytest","GitHub Actions"],gh:"https://github.com/chetansharma06/ai-debug-advisor"},
+  tech:["Python","ast","Ruff","Pyflakes","Radon","Streamlit","Typer","pytest","GitHub Actions"],
+  image:"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+  gh:"https://github.com/chetansharma06/ai-debug-advisor"},
  {title:"Network Security - Malicious URL Detection",cat:CATS[2],date:"2025 - Present",
   desc:"An end-to-end ML pipeline for phishing and malicious URL detection covering data ingestion, validation, transformation, feature engineering, training and prediction.",
   bullets:["FastAPI/Flask APIs with MLflow experiment tracking.","Containerized with Docker, deployed on AWS EC2, artifacts in S3, CI/CD with GitHub Actions."],
-  tech:["Python","Scikit-learn","Pandas","NumPy","FastAPI","Flask","MongoDB Atlas","MLflow","Docker","AWS EC2","AWS S3","GitHub Actions"],gh:"https://github.com/chetansharma06/networksecurity"},
+  tech:["Python","Scikit-learn","Pandas","NumPy","FastAPI","Flask","MongoDB Atlas","MLflow","Docker","AWS EC2","AWS S3","GitHub Actions"],
+  image:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80",
+  gh:"https://github.com/chetansharma06/networksecurity"},
  {title:"Computer Vision-Powered Image Search Application",cat:CATS[3],date:"",
   desc:"An image search application powered by computer vision and deep learning.",
   bullets:["Uses YOLO for object detection."],
-  tech:["Python","Deep Learning","YOLO","Computer Vision"],gh:"https://github.com/chetansharma06/Computer-Vision-Powered-Image-Search-Application"}
+  tech:["Python","Deep Learning","YOLO","Computer Vision"],
+  image:"https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80",
+  gh:"https://github.com/chetansharma06/Computer-Vision-Powered-Image-Search-Application"}
 ];
 const SKILLS = {"Languages":["Python","SQL","HTML/CSS"],
  "ML/AI":["Machine Learning","Deep Learning","NLP","Computer Vision","Generative AI","RAG","LLMs","Prompt Engineering","Multi-Agent Systems"],
@@ -45,10 +61,42 @@ const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const toast = t => { const e = $("#toast"); e.textContent = t; e.classList.add("on"); setTimeout(() => e.classList.remove("on"), 1800); };
 let cat = "All";
-
+const hero = $(".hero");
+const heroWrap = $(".me-wrap");
+const heroText = $(".hero-text");
+const mascot = $(".mascot");
+if (hero && heroWrap && !reduce) {
+  hero.addEventListener("pointermove", (event) => {
+    const rect = hero.getBoundingClientRect();
+    const px = ((event.clientX - rect.left) / rect.width - 0.5);
+    const py = ((event.clientY - rect.top) / rect.height - 0.5);
+    const x = px * 18;
+    const y = py * 18;
+    heroWrap.style.transform = `perspective(1200px) rotateX(${(-y).toFixed(2)}deg) rotateY(${x.toFixed(2)}deg) translateY(-10px) translateZ(20px)`;
+    if (heroText) heroText.style.transform = `perspective(1200px) rotateX(${(y * 0.8).toFixed(2)}deg) rotateY(${(-x * 0.8).toFixed(2)}deg) translateZ(18px)`;
+    hero.querySelectorAll(".blob").forEach((blob, index) => {
+      const driftX = (index === 0 ? 1 : -1) * x * 2.4;
+      const driftY = (index === 0 ? -1 : 1) * y * 2.4;
+      blob.style.transform = `translate(${driftX}px, ${driftY}px) scale(${1 + Math.abs(px) * 0.12})`;
+    });
+  });
+  hero.addEventListener("pointerleave", () => {
+    heroWrap.style.transform = "";
+    if (heroText) heroText.style.transform = "";
+    hero.querySelectorAll(".blob").forEach(blob => { blob.style.transform = ""; });
+  });
+}
+if (mascot) {
+  mascot.addEventListener("click", () => {
+    document.getElementById("projects").scrollIntoView({behavior: reduce ? "auto" : "smooth", block: "start"});
+  });
+}
 // ---------- skills ----------
 $("#skillgrid").innerHTML = Object.entries(SKILLS).map(([g, a]) =>
- `<div class="card"><h3>${g}</h3><ul class="chips">${a.map((s, i) => `<li><button class="chip" style="animation-delay:${i * 40}ms" data-skill="${esc(s)}">${esc(s)}</button></li>`).join("")}</ul></div>`).join("");
+ `<div class="card skill-card">
+    <h3>${g}</h3>
+    <ul class="chips">${a.map((s, i) => `<li><button class="chip" style="animation-delay:${i * 40}ms" data-skill="${esc(s)}">${esc(s)}</button></li>`).join("")}</ul>
+  </div>`).join("");
 $("#skillgrid").addEventListener("click", e => {
  const b = e.target.closest("[data-skill]"); if (!b) return;
  cat = "All"; $("#q").value = b.dataset.skill; render();
@@ -71,8 +119,12 @@ function render() {
  tabs();
  $("#empty").hidden = list.length > 0;
  $("#cards").innerHTML = list.map(p => `<article class="card proj" tabindex="0" role="button" data-i="${PROJECTS.indexOf(p)}" aria-label="Open details: ${esc(p.title)}">
-  <span class="m">${esc(p.cat)}${p.date ? " · " + esc(p.date) : ""}</span><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p>
-  <ul class="chips">${p.tech.slice(0, 5).map(t => `<li class="chip">${esc(t)}</li>`).join("")}${p.tech.length > 5 ? `<li class="chip">+${p.tech.length - 5}</li>` : ""}</ul></article>`).join("");
+  <div class="project-art" style="background-image: linear-gradient(180deg, rgba(17,24,39,.12), rgba(17,24,39,.48)), url('${p.image}')"></div>
+  <div class="project-body">
+    <span class="m">${esc(p.cat)}${p.date ? " · " + esc(p.date) : ""}</span><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p>
+    <ul class="chips">${p.tech.slice(0, 5).map(t => `<li class="chip">${esc(t)}</li>`).join("")}${p.tech.length > 5 ? `<li class="chip">+${p.tech.length - 5}</li>` : ""}</ul>
+  </div>
+  </article>`).join("");
 }
 $("#tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (b) { cat = b.dataset.c; render(); } });
 $("#q").addEventListener("input", render);
@@ -83,7 +135,7 @@ $("#cards").addEventListener("pointermove", e => {
  const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
  c.style.setProperty("--mx", (e.clientX - r.left) + "px");
  c.style.setProperty("--my", (e.clientY - r.top) + "px");
- c.style.transform = `perspective(700px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-4px)`;
+ c.style.transform = `perspective(700px) rotateY(${x * 7}deg) rotateX(${-y * 7}deg) translateY(-8px)`;
 });
 $("#cards").addEventListener("pointerout", e => { const c = e.target.closest(".proj"); if (c) c.style.transform = ""; });
 
@@ -106,15 +158,20 @@ modal.addEventListener("click", e => { if (e.target === modal) modal.close(); })
 const themeBtn = $("#theme");
 const root = document.documentElement;
 const saved = localStorage.getItem("theme");
-if (saved === "dark") root.setAttribute("data-theme", "dark");
+if (!saved) {
+  root.setAttribute("data-theme", "dark");
+  localStorage.setItem("theme", "dark");
+} else if (saved === "light") {
+  root.setAttribute("data-theme", "light");
+}
+if (root.getAttribute("data-theme") === "dark") themeBtn.textContent = "☀";
 themeBtn.addEventListener("click", () => {
  const on = root.getAttribute("data-theme") === "dark";
- root.setAttribute("data-theme", on ? "" : "dark");
- localStorage.setItem("theme", on ? "" : "dark");
- themeBtn.textContent = on ? "☀" : "☾";
+ root.setAttribute("data-theme", on ? "light" : "dark");
+ localStorage.setItem("theme", on ? "light" : "dark");
+ themeBtn.textContent = on ? "☾" : "☀";
  toast(on ? "Light theme" : "Dark theme");
 });
-if (root.getAttribute("data-theme") === "dark") themeBtn.textContent = "☀";
 
 // ---------- particle canvas ----------
 const cv = $("#spark"), ctx = cv.getContext("2d");
